@@ -1,6 +1,6 @@
-package com.eatmybits.floobits.prime
+package com.eatmybits.floobits.prime.strategy
 
-class PrimeNumberRegexStrategy implements PrimeNumberSolverStrategy{
+class PrimeNumberRegexStrategy implements PrimeNumberComputationStrategy{
 
     public boolean isPrime(number) {
        number == null ? false : !("1" * number ==~ '^1?|(..+?)\\1+')

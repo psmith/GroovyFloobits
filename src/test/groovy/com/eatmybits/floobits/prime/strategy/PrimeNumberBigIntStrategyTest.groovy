@@ -1,12 +1,13 @@
-package com.eatmybits.floobits.prime
+package com.eatmybits.floobits.prime.strategy
 
 import org.junit.Before
 import org.junit.Test
 
-class PrimeNumberRegexStrategyTest extends PrimeNumberBaseTest{
+class PrimeNumberBigIntStrategyTest extends PrimeNumberBaseTest{
+
     @Before
     void setup(){
-        super.setup(new PrimeNumberRegexStrategy())
+        setup(new PrimeNumberBigIntStrategy())
     }
 
     @Test

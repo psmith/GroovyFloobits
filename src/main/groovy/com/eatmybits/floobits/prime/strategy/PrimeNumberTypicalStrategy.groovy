@@ -1,6 +1,6 @@
-package com.eatmybits.floobits.prime
+package com.eatmybits.floobits.prime.strategy
 
-class PrimeNumberTypicalStrategy implements PrimeNumberSolverStrategy{
+class PrimeNumberTypicalStrategy implements PrimeNumberComputationStrategy{
     @Override
     boolean isPrime(number) {
         def isPrime = false
