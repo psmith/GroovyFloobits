@@ -1,5 +1,6 @@
 package com.eatmybits.floobits.prime.strategy
 
+import com.eatmybits.floobits.prime.PrimeNumberBaseTest
 import org.junit.Before
 import org.junit.Test
 
@@ -7,7 +8,7 @@ class PrimeNumberBigIntStrategyTest extends PrimeNumberBaseTest{
 
     @Before
     void setup(){
-        setup(new PrimeNumberBigIntStrategy())
+        primNum = new PrimeNumber(new PrimeNumberBigIntStrategy())
     }
 
     @Test

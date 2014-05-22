@@ -1,8 +1,10 @@
 package com.eatmybits.floobits.prime.strategy
 
+import com.eatmybits.floobits.prime.IsPrime
+
 class PrimeNumber {
-    final PrimeNumberComputationStrategy context
-    PrimeNumber(PrimeNumberComputationStrategy context = new PrimeNumberRegexStrategy()){
+    final IsPrime context
+    PrimeNumber(IsPrime context){
         this.context = context
     }
     boolean isPrime(number){

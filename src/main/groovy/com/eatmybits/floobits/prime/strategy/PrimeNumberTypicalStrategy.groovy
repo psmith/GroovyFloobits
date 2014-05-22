@@ -1,8 +1,10 @@
 package com.eatmybits.floobits.prime.strategy
 
-class PrimeNumberTypicalStrategy implements PrimeNumberComputationStrategy{
+import com.eatmybits.floobits.prime.IsPrime
+
+class PrimeNumberTypicalStrategy implements IsPrime{
     @Override
-    boolean isPrime(number) {
+    boolean isPrime(Integer number) {
         def isPrime = false
         if(number != null){
             if(number > 2){

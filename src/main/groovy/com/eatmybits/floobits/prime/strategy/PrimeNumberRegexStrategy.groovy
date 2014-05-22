@@ -1,8 +1,10 @@
 package com.eatmybits.floobits.prime.strategy
 
-class PrimeNumberRegexStrategy implements PrimeNumberComputationStrategy{
+import com.eatmybits.floobits.prime.IsPrime
 
-    public boolean isPrime(number) {
+class PrimeNumberRegexStrategy implements IsPrime{
+
+    public boolean isPrime(Integer number) {
        number == null ? false : !("1" * number ==~ '^1?|(..+?)\\1+')
     }
 
